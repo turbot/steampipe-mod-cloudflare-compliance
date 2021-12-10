@@ -1,5 +1,5 @@
 ---
-repository: "https://.com/turbot/steampipe-mod-cloudflare-sherlock"
+repository: "https://github.com/turbot/steampipe-mod-cloudflare-sherlock"
 ---
 
 # Cloudflare Sherlock Mod
@@ -23,34 +23,39 @@ Interrogate your Cloudflare resources with the help of the world's greatest dete
 ## Get started
 
 Install the Cloudflare plugin with [Steampipe](https://steampipe.io):
+
 ```shell
-steampipe plugin install
+steampipe plugin install cloudflare
 ```
 
 Clone:
+
 ```sh
-git clone https://.com/turbot/steampipe-mod-cloudflare-sherlock.git
+git clone https://github.com/turbot/steampipe-mod-cloudflare-sherlock.git
 cd steampipe-mod--sherlock
 ```
 
 Run all benchmarks:
+
 ```shell
 steampipe check all
 ```
 
 Run a benchmark:
+
 ```shell
 steampipe check benchmark.TBD
 ```
 
 Run a specific control:
+
 ```shell
 steampipe check control.TBD
 ```
 
 ### Credentials
 
-This mod uses the credentials configured in the [Steampipe Cloudflare plugin](https://hub.steampipe.io/plugins/turbot/).
+This mod uses the credentials configured in the [Steampipe Cloudflare plugin](https://hub.steampipe.io/plugins/turbot/cloudflare).
 
 ### Configuration
 
@@ -58,5 +63,5 @@ No extra configuration is required.
 
 ## Get involved
 
-* Contribute: [Cloudflare Repo](https://.com/turbot/steampipe-mod-cloudflare-sherlock)
-* Community: [Slack Channel](https://join.slack.com/t/steampipe/shared_invite/zt-oij778tv-lYyRTWOTMQYBVAbtPSWs3g)
+* Contribute: [Cloudflare Repo](https://github.com/turbot/steampipe-mod-cloudflare-sherlock)
+* Community: [Slack Channel](https://steampipe.io/community/join)
