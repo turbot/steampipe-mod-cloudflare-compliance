@@ -1,5 +1,5 @@
 benchmark "user_best_practices" {
-  title = "User Best Practices"
+  title       = "User Best Practices"
   description = "Best practices for your users."
   children = [
     control.user_two_factor_enabled
@@ -7,9 +7,9 @@ benchmark "user_best_practices" {
 }
 
 control "user_two_factor_enabled" {
-  title = "Users should have two-factor authentication enabled"
+  title       = "Users should have two-factor authentication enabled"
   description = "Two-factor authentication makes it harder for unauthorized actors to access users."
-  sql = <<-EOT
+  sql         = <<-EOT
     select
       id as resource,
       case
