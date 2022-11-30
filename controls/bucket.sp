@@ -1,5 +1,5 @@
 benchmark "r2_bucket_best_practices" {
-  title = "R2 Bucket Best Practices"
+  title       = "R2 Bucket Best Practices"
   description = "Best practices for your Cloudflare R2 Bucket."
   children = [
     control.r2_bucket_default_encryption_enabled
@@ -7,9 +7,9 @@ benchmark "r2_bucket_best_practices" {
 }
 
 control "r2_bucket_default_encryption_enabled" {
-  title = "R2 bucket default encryption should be enabled"
+  title       = "R2 bucket default encryption should be enabled"
   description = "To help protect data at rest, ensure encryption is enabled for your Cloudflare R2 buckets."
-  sql = <<-EOT
+  sql         = <<-EOT
     select
       -- Required Columns
       b.name as resource,

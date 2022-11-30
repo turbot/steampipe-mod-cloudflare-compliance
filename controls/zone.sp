@@ -1,5 +1,5 @@
 benchmark "zone_best_practices" {
-  title = "Zone Best Practices"
+  title       = "Zone Best Practices"
   description = "Best practices for your zones."
   children = [
     control.zone_dnssec_enabled,
@@ -8,9 +8,9 @@ benchmark "zone_best_practices" {
 }
 
 control "zone_dnssec_enabled" {
-  title = "Zones should have DNSSEC enabled"
+  title       = "Zones should have DNSSEC enabled"
   description = "DNSSEC adds an extra layer of authentication layer to DNS, making sure that visitors go to your domain instead of a spoofed domain."
-  sql = <<-EOT
+  sql         = <<-EOT
     select
       id as resource,
       case
@@ -24,9 +24,9 @@ control "zone_dnssec_enabled" {
 }
 
 control "zone_min_tls_1_2" {
-  title = "Zones should have a minimum TLS version of 1.2 or higher"
+  title       = "Zones should have a minimum TLS version of 1.2 or higher"
   description = "A higher TLS version implies a stronger cryptographic standard due to fixes for known vulnerabilities and additional security."
-  sql = <<-EOT
+  sql         = <<-EOT
     select
       id as resource,
       case
